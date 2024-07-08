@@ -1,1 +1,42 @@
 @import "_reset.scss";
+.container{
+    max-width: 640px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.left{
+    margin-bottom: 24px;
+    img{
+        display: block;
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.center{
+    margin: 0 20px;
+    .content{
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        h2{
+            font-size: 20px;
+            line-height: 1.2;
+        }
+        p{
+            line-height: 1.5;
+        }
+    }
+}
+.footer{
+    padding: 48px 0;
+    border: 1px solid black;
+    p{
+        text-align: center;
+        line-height: 1.5;
+    }
+}

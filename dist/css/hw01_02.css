@@ -51,3 +51,49 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.left {
+  margin-bottom: 24px;
+}
+.left img {
+  display: block;
+  margin-bottom: 24px;
+}
+.left img:last-child {
+  margin-bottom: 0;
+}
+
+.center {
+  margin: 0 20px;
+}
+.center .content {
+  margin-bottom: 24px;
+}
+.center .content:last-child {
+  margin-bottom: 0;
+}
+.center .content h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.center .content p {
+  line-height: 1.5;
+}
+
+.footer {
+  padding: 48px 0;
+  border: 1px solid black;
+}
+.footer p {
+  text-align: center;
+  line-height: 1.5;
+}
