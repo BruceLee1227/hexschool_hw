@@ -52,6 +52,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-size: Castoro;
 }
@@ -122,12 +126,13 @@ header h1 {
   font-style: italic;
 }
 
+.footer-content {
+  text-align: center;
+}
+
 footer {
   background-color: black;
   padding: 64px 0;
-}
-footer .footer-content {
-  text-align: center;
 }
 footer img {
   display: inline;
