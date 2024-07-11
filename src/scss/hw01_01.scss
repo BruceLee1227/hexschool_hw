@@ -1,10 +1,12 @@
 @import "_reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
 body{
-    font-size: Castoro;
+    font-family: "Castoro", serif;
+    line-height: 1.5;
 }
 .container{
     margin: 0 auto;
-    width: 960px;
+    width: 1296px;
 }
 img{
     display: block;
@@ -13,9 +15,7 @@ img{
 header{
     h1{
         font-size: 128px;
-        line-height: 192px;
         letter-spacing: 12%;
-        font-weight: 400;
     }
 }
 .right{
@@ -28,7 +28,6 @@ header{
         margin-left: 50%;
         font-weight: 400;
         font-size: 32px;
-        line-height: 48px;
         padding: 48px 0;
     }
 }
@@ -37,7 +36,6 @@ header{
     margin-bottom: 160px;
     .title{
         font-size: 40px;
-        line-height: 60px;
         font-weight: 400;
         color: #AE0000;
         border-bottom: 3px solid #AE0000;
@@ -49,7 +47,6 @@ header{
         }
         li{
             font-size: 24px;
-            line-height: 36px;
             font-weight: 400;
         }
         a{
@@ -58,10 +55,8 @@ header{
         }
         span{
             font-size: 20px;
-            line-height: 30px;
             color:#949494;
             font-style: italic;
-            
         }
     }
 }

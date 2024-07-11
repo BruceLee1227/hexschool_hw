@@ -52,8 +52,18 @@ table {
   border-spacing: 0;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: baseline;
+  height: auto;
 }
 
 .container {
