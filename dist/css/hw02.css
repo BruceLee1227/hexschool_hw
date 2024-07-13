@@ -131,8 +131,17 @@ header .btn {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.index .left, .index .right {
-  width: 50%;
+.index .content {
+  display: flex;
+}
+.index h2, .index p {
+  color: #ffffff;
+}
+.index h2 {
+  font-size: 40px;
+}
+.index p {
+  font-size: 20px;
 }
 
 footer {

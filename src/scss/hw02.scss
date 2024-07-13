@@ -62,8 +62,17 @@ header{
     background-image: url(../imgs/background-img-hw2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    .left,.right{
-        width: 50%;
+    .content{
+        display: flex;
+    }
+    h2,p{
+        color:#ffffff;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
     }
 }
 footer{
