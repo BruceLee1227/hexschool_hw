@@ -67,10 +67,6 @@ img {
   height: auto;
 }
 
-*, *::after, *::before {
-  outline: 1px solid red;
-}
-
 body {
   font-family: "Bruno Ace SC", sans-serif;
   line-height: 1.5;
@@ -82,29 +78,42 @@ body {
   margin: 0 auto;
 }
 
+.p-160 {
+  padding: 160px 0;
+}
+
 .d-flex {
   display: flex;
 }
 
-nav .menu {
-  display: flex;
-  justify-content: space-between;
-}
-nav .menu li {
-  padding-top: 40px;
-}
-nav .menu a {
-  color: #ffffff;
+.h2 {
+  font-size: 40px;
+  margin-bottom: 36px;
 }
 
-header .left {
-  margin-right: 24px;
+.p-text {
+  font-size: 20px;
+  margin-bottom: 32px;
 }
-header .content {
-  display: flex;
-  align-items: center;
+
+nav a {
+  padding-top: 40px;
+  display: block;
+  color: #ffffff;
+}
+nav .d-flex {
+  justify-content: space-between;
+}
+
+header {
   color: #ffffff;
   font-size: 64px;
+}
+header .d-flex {
+  align-items: center;
+}
+header .left {
+  margin-right: 24px;
 }
 header .name {
   color: #00FFA3;
@@ -125,23 +134,41 @@ header .btn {
 }
 
 .index {
-  padding: 160px 0;
   background: #ffffff;
   background-image: url(../imgs/background-img-hw2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.index .content {
-  display: flex;
+.index .container {
+  gap: 24px;
 }
 .index h2, .index p {
   color: #ffffff;
 }
-.index h2 {
-  font-size: 40px;
+
+.about {
+  background-color: #ffffff;
 }
-.index p {
+.about h3 {
+  font-size: 24px;
+}
+.about p {
   font-size: 20px;
+}
+.about .skills {
+  width: 50%;
+  flex-wrap: wrap;
+}
+.about li {
+  width: 40%;
+  flex-direction: column;
+}
+.about .intro {
+  width: 50%;
+}
+
+.contact {
+  background-image: linear-gradient(to bottom, #050014, #01021E);
 }
 
 footer {

@@ -1,9 +1,9 @@
 @import "_reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&display=swap');
 $black: #000000;
-*,*::after,*::before{
-    outline: 1px solid red;
-}
+// *,*::after,*::before{
+//     outline: 1px solid red;
+// }
 body{
     font-family: "Bruno Ace SC",sans-serif;
     line-height: 1.5;
@@ -13,30 +13,38 @@ body{
     max-width: 1296px;
     margin: 0 auto;
 }
+.p-160{
+    padding: 160px 0;
+}
 .d-flex{
     display: flex;
 }
+.h2{
+    font-size: 40px;
+    margin-bottom: 36px;
+}
+.p-text{
+    font-size: 20px;
+    margin-bottom: 32px;
+}
 nav{
-    .menu{
-        display: flex;
+    a{
+        padding-top: 40px;
+        display: block;
+        color: #ffffff;
+    }
+    .d-flex{
         justify-content: space-between;
-        li{
-            padding-top: 40px;
-        }
-        a{
-            color:#ffffff;
-        }
     }
 }
 header{
+    color:#ffffff;
+    font-size: 64px;
+    .d-flex{
+        align-items: center;
+    }
     .left{
         margin-right: 24px;
-    }
-    .content{
-        display: flex;
-        align-items: center;
-        color:#ffffff;
-        font-size: 64px;
     }
     .name{
         color:#00FFA3;
@@ -57,23 +65,39 @@ header{
     }
 }
 .index{
-    padding: 160px 0;
     background: #ffffff;
     background-image: url(../imgs/background-img-hw2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    .content{
-        display: flex;
+    .container{
+        gap: 24px;
     }
     h2,p{
         color:#ffffff;
     }
-    h2{
-        font-size: 40px;
+}
+.about{
+    background-color: #ffffff;
+    h3{
+        font-size: 24px;
     }
     p{
         font-size: 20px;
     }
+    .skills{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    li{
+        width: 40%;
+        flex-direction: column;
+    }
+    .intro{
+        width: 50%;
+    }
+}
+.contact{
+    background-image: linear-gradient(to bottom,#050014,#01021E);
 }
 footer{
     color: #ffffff;
