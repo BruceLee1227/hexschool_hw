@@ -7,36 +7,35 @@
     <title>第二周作業</title>
 </head>
 <body>
-    <nav>
-        <ul class="menu container d-flex">
+    <header class="nav">
+        <ul class="container menu d-flex">
             <li><a href="#">WILLIAM LEE</a></li>
             <li><a href="#">BASED IN TAIWAN</a></li>
-            <li><a href="#" class="acc">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
+            <li><a href="#">CURRENTLY FRONT brEND ENGINEER AT HEXSCHOOL</a></li>
             <li><a href="#">CONTACT ME</a></li>
         </ul>
-    </nav>
-    <header>
+    </header>
+    <div class="intro">
         <div class="container d-flex">
-            <div class="left">
-                <img src="imgs/people.png" alt="WILLIAM LEE">
-            </div>
+            <img src="imgs/people.png" alt="people">
             <div class="right">
-                <p>Hi</p>
-                <p>I’m a front-end developer</p>
-                <p class="name">William</p>
-                <button class="btn">
-                    <a href="#">CONTACT ME</a>
-                    <img src="imgs/arrow_outward.png" alt="">
-                </button>
+                <h1 class="h2">
+                    Hi <br>
+                    I’m a front-end developer
+                    <span class="h1 text-primary text-right">William</span>
+                </h1>
+                <div class="d-flex">                    
+                    <a href="#" class="btn btn-light d-flex">contact me<img src="imgs/arrow_outward.png" alt=""/></a>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
     <section class="index p-160">
         <div class="container d-flex">
             <div class="left">
                 <div class="left-text">
                     <h2 class="h2">Introduction</h2>
-                    <p class="p-text">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+                    <p class="fs-1">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
                 </div>
                 <div class="left-img">
                     <img src="imgs/sparkle-sm.png" alt="sparkle-sm">
@@ -51,48 +50,76 @@
     </section>
     <section class="about p-160">
         <div class="container d-flex">
-            <ul class="skills d-flex">
+            <ul class="left d-flex">
                 <li class="d-flex">
-                    <h3>01</h3>
-                    <p>Attention to Detail</p>
-                    <p>Meticulous code analysis and optimization.</p>
+                    <h3 class="fs-1">01</h3>
+                    <p class="fs-2">Attention to Detail</p>
+                    <p class="fs-3">Meticulous code analysis and optimization.</p>
                 </li>
                 <li  class="d-flex">
-                    <h3>02</h3>
-                    <p>Adaptability</p>
-                    <p>Swift learning of new technologies.</p>
+                    <h3 class="fs-1">02</h3>
+                    <p class="fs-2">Adaptability</p>
+                    <p class="fs-3">Swift learning of new technologies.</p>
                 </li>
                 <li  class="d-flex">
-                    <h3>03</h3>
-                    <p>Problem Solver</p>
-                    <p>Identifying and resolving issues.</p>
+                    <h3 class="fs-1">03</h3>
+                    <p class="fs-2">Problem Solver</p>
+                    <p class="fs-3">Identifying and resolving issues.</p>
                 </li>
                 <li  class="d-flex">
-                    <h3>04</h3>
-                    <p>Team Player</p>
-                    <p>Collaborates and shares ideas.</p>
+                    <h3 class="fs-1">04</h3>
+                    <p class="fs-2">Team Player</p>
+                    <p class="fs-3">Collaborates and shares ideas.</p>
                 </li>
             </ul>
-            <div class="intro">
+            <div class="right">
                 <h2 class="h2">About Me</h2>
-                <p class="p-text">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+                <p class="fs-2">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
             </div>    
         </div>
     </section>
     <section class="contact p-160">
         <div class="container">
-            <div class="contact-content">
-                <h2>ContactMe</h2>
-                <img src="imgs/trending_flat_black_24dp 1.png" alt="flat_black">
+            <div class="content d-flex">
+                <div class="contact-text d-flex">
+                    <h2 class="h2">ContactMe</h2>
+                    <img src="imgs/trending_flat_black_24dp 1.png" alt="flat_black_24dp">
+                </div>
+                <div class="contact-imgs">
+                    <img src="imgs/discord.png" alt="discord">
+                    <img src="imgs/instagram (1).png" alt="instagram(1)">
+                    <img src="imgs/message.png" alt="message">    
+                </div>
             </div>
-            <img src="imgs/discord.png" alt="discord">
-            <img src="imgs/instagram (1).png" alt="instagram">
-            <img src="imgs/message.png" alt="message">
         </div>
     </section>
-    <section></section>
-    <footer class="container">
-        <p>all rights reserved @hexschool2023</p>
+    <section class="projects p-160">
+        <div class="container">
+            <h2 class="h2">My Projects</h2>
+            <div class="content d-flex">
+                <div class="left">
+                    <img src="imgs/Rectangle 10.png" alt="rectangle10">
+                </div>
+                <div class="right">
+                    <div class="right-top">
+                        <img src="imgs/Rectangle 15.png" alt="rectangle15">
+                        <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                        <div class="d-flex">                    
+                            <a href="#" class="btn btn-dark d-flex">contact me<img src="imgs/arrow_outward-white.png" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="right-bottom">
+                        <img src="imgs/Rectangle 14.png" alt="rectangle14">
+                        <img src="imgs/Rectangle 29.png" alt="rectangle29">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>all rights reserved @hexschool2023</p>
+        </div>
     </footer>
 </body>
 </html>

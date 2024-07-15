@@ -59,6 +59,8 @@ table {
 
 a {
   text-decoration: none;
+  display: inline-block;
+  color: inherit;
 }
 
 img {
@@ -70,7 +72,6 @@ img {
 body {
   font-family: "Bruno Ace SC", sans-serif;
   line-height: 1.5;
-  background: #000000;
 }
 
 .container {
@@ -78,59 +79,81 @@ body {
   margin: 0 auto;
 }
 
-.p-160 {
-  padding: 160px 0;
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+.fs-1 {
+  font-size: 32px;
+}
+
+.fs-2 {
+  font-size: 24px;
+}
+
+.fs-3 {
+  font-size: 20px;
+}
+
+.text-primary {
+  color: #00ffa3;
+}
+
+.text-right {
+  display: block;
+  text-align: right;
 }
 
 .d-flex {
   display: flex;
 }
 
-.h2 {
-  font-size: 40px;
-  margin-bottom: 36px;
+.p-160 {
+  padding: 160px 0;
 }
 
-.p-text {
-  font-size: 20px;
-  margin-bottom: 32px;
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
 }
 
-nav a {
-  padding-top: 40px;
-  display: block;
-  color: #ffffff;
+.btn-light {
+  background-color: #fff;
+  color: black;
 }
-nav .d-flex {
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  padding: 40px 0;
+  background-color: black;
+  color: #D1D1D1;
+}
+.nav .menu {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  background-color: black;
+  color: white;
+}
+.intro .d-flex {
+  align-items: center;
   justify-content: space-between;
 }
-
-header {
-  color: #ffffff;
-  font-size: 64px;
+.intro .right {
+  margin-left: 24px;
 }
-header .d-flex {
-  align-items: center;
-}
-header .left {
-  margin-right: 24px;
-}
-header .name {
-  color: #00FFA3;
-  font-size: 128px;
-  text-align: right;
-}
-header a {
-  text-align: right;
-}
-header .btn {
-  display: flex;
-  align-items: center;
-  font-family: "Bruno Ace SC", sans-serif;
-  margin-left: auto;
-  border: 5px solid red;
-  border-radius: 50px;
-  padding: 12px;
+.intro .right .d-flex {
+  justify-content: flex-end;
 }
 
 .index {
@@ -138,6 +161,12 @@ header .btn {
   background-image: url(../imgs/background-img-hw2.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.index .left-text .h2 {
+  margin-bottom: 36px;
+}
+.index .left-text .fs-1 {
+  margin-bottom: 32px;
 }
 .index .container {
   gap: 24px;
@@ -155,7 +184,7 @@ header .btn {
 .about p {
   font-size: 20px;
 }
-.about .skills {
+.about .list {
   width: 50%;
   flex-wrap: wrap;
 }
@@ -163,17 +192,26 @@ header .btn {
   width: 40%;
   flex-direction: column;
 }
-.about .intro {
+.about .left, .about .right {
   width: 50%;
 }
 
 .contact {
   background-image: linear-gradient(to bottom, #050014, #01021E);
+  color: #ffffff;
+}
+.contact .content {
+  justify-content: space-between;
+}
+
+.projects h2 {
+  text-align: right;
 }
 
 footer {
   color: #ffffff;
   padding: 40px 0;
+  background-color: black;
 }
 footer p {
   text-align: center;
