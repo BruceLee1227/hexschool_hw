@@ -1,7 +1,7 @@
 @import "_reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&display=swap');
 // *,*::after,*::before{
-//     // outline: 1px solid red;
+//     outline: 1px solid red;
 // }
 body{
     font-family: "Bruno Ace SC",sans-serif;
@@ -99,22 +99,24 @@ body{
 }
 .about{
     background-color: #ffffff;
-    h3{
-        font-size: 24px;
+    .container{
+        justify-content: space-between;
+        align-items: center;
     }
-    p{
-        font-size: 20px;
-    }
-    .list{
-        width: 50%;
+    .left{
+        width: 636px;
         flex-wrap: wrap;
+        gap: 24px;
+
+        li{
+            width: calc(50% - 12px);
+            padding: 16px;
+            border: 1px solid #e3e3e3;
+            box-shadow: 4px 4px 4px 0px rgba(#000000,0.08);
+        }
     }
-    li{
-        width: 40%;
-        flex-direction: column;
-    }
-    .left,.right{
-        width: 50%;
+    .right{
+        width: 526px;
     }
 }
 .contact{
@@ -123,10 +125,41 @@ body{
     .content{
         justify-content: space-between;
     }
+    &-text{
+        align-items: center;
+        img{
+            width: 100px;
+        }
+    }
+    &-imgs{
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .link{
+        box-shadow: 0px 0px 16px 3px rgba(148,148,255,0.9);
+        box-shadow: 0px 0px 16px 3px rgba(148,148,255,0.9);
+        border-radius: 40px;
+    }
 }
 .projects{
-    h2{
-        text-align: right;
+    .d-flex{
+        justify-content: space-between;
+    }
+    .title{
+        width: 746px;
+        margin-left: auto;
+    }
+    .right{
+        flex-direction: column;
+    }
+    .mr-24{
+        margin-right: 24px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
     }
 }
 footer{

@@ -178,22 +178,23 @@ body {
 .about {
   background-color: #ffffff;
 }
-.about h3 {
-  font-size: 24px;
+.about .container {
+  justify-content: space-between;
+  align-items: center;
 }
-.about p {
-  font-size: 20px;
-}
-.about .list {
-  width: 50%;
+.about .left {
+  width: 636px;
   flex-wrap: wrap;
+  gap: 24px;
 }
-.about li {
-  width: 40%;
-  flex-direction: column;
+.about .left li {
+  width: calc(50% - 12px);
+  padding: 16px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
 }
-.about .left, .about .right {
-  width: 50%;
+.about .right {
+  width: 526px;
 }
 
 .contact {
@@ -203,9 +204,40 @@ body {
 .contact .content {
   justify-content: space-between;
 }
+.contact-text {
+  align-items: center;
+}
+.contact-text img {
+  width: 100px;
+}
+.contact-imgs {
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact .link {
+  box-shadow: 0px 0px 16px 3px rgba(148, 148, 255, 0.9);
+  box-shadow: 0px 0px 16px 3px rgba(148, 148, 255, 0.9);
+  border-radius: 40px;
+}
 
-.projects h2 {
-  text-align: right;
+.projects .d-flex {
+  justify-content: space-between;
+}
+.projects .title {
+  width: 746px;
+  margin-left: auto;
+}
+.projects .right {
+  flex-direction: column;
+}
+.projects .mr-24 {
+  margin-right: 24px;
+}
+.projects .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
 
 footer {
