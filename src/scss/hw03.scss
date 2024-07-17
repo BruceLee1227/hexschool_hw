@@ -1,0 +1,163 @@
+@import "_reset.scss";
+// Roboto字體
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// Noto Sans Traditional Chinese
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// 環境設定
+body{
+    font-family:"Roboto","Noto Sans TC",serif;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+@mixin d-flex{
+    display: flex;
+}
+@mixin btn{
+    background-color: $color-red;
+    color: #ffffff;
+    padding: 6px 12px;
+}
+@mixin btn-lg{
+    @include btn;
+    padding: 16px 176px;
+    text-align: center;
+}
+@mixin fz($size){
+    font-size: $size;
+}
+@mixin padding($num1, $num2){
+    padding: $num1 $num2;
+}
+@mixin title($color,$num3){
+    @include fz(48px);
+    color: $color;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: $num3;
+}
+$color-white:#FBF2F2;
+$color-black:#000000;
+$color-red:#AA0601;
+img{
+    display: block;
+    max-width: 100%;
+}
+.nav{
+    background-color: $color-red;
+    @include padding(16px, 0);
+    .container{
+        @include d-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu{
+        @include d-flex;
+        @include fz(20px);
+        gap: 64px;
+        color:white;
+        
+    }
+    img{
+        width: 80px;
+    }
+}
+.banner{
+    height: 787px;
+    background-image: url(../imgs/home-header-hw3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:$color-red;
+    .container{
+        @include d-flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    h1{
+        @include fz(64px);
+        font-weight: bold;
+    }
+    .text{
+        p{
+            @include fz(36px);
+            text-align: right;
+        }
+        a{
+            @include btn;
+        }
+    }
+    .btn{
+        @include d-flex;
+        justify-content: flex-end;
+    }
+}
+.about{
+    background-color: $color-white;
+    @include padding(80px,0px);
+    &-title{
+        @include title($color-red,36px);
+    }
+    &-menu{
+        @include d-flex;
+        gap: 24px;
+        li{
+            img{
+                margin: 0 auto;
+            }
+            h3{
+                @include fz(36px);
+                color: $color-red;
+                text-align: center;
+            }
+            p{
+                @include fz(24px);
+            }
+        }
+    }
+
+}
+.classic{
+    background-color: #fff;
+    @include padding(80px,0);
+    &-title{
+        @include title($color-red,48px);
+    }
+    &-menu{
+        @include d-flex;
+        justify-content: space-between;
+        li{
+            width: 416px;
+        }
+        p{
+            color: $color-red;
+            font-weight: bolder;
+            font-style: italic;
+            @include fz(48px);
+            text-align: center;
+        }
+    }
+}
+.joint{
+    @include padding(80px,0px);
+    background-color: $color-red;
+    &-title{
+        @include title($color-white,48px);
+    }
+    &-menu{
+        @include d-flex;
+    }
+    p{
+        background-color: #fff;
+        text-align: center;
+        @include fz(48px);
+        @include padding(8px,0px);
+        color: $color-red;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
