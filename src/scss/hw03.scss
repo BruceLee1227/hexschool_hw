@@ -14,150 +14,90 @@ body{
     margin: 0 auto;
 }
 
-@mixin d-flex{
+
+$color-white:#FBF2F2;
+$color-black:#000000;
+$color-red:#AA0601;
+// 常用class
+.d-flex{
     display: flex;
 }
-@mixin btn{
+.h1{
+    font-size: 64px;
+    font-weight: bold;
+}
+.h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.fz-48{
+    font-size: 48px;
+}
+.fz-36{
+    font-size: 36px;
+}
+.btn{
     background-color: $color-red;
     color: #ffffff;
     padding: 6px 12px;
 }
-@mixin btn-lg{
-    @include btn;
+.btn-lg{
+    background-color: $color-red;
+    color: #ffffff;
+    padding: 6px 12px;
     padding: 16px 176px;
     text-align: center;
 }
-@mixin fz($size){
-    font-size: $size;
-}
-@mixin padding($num1, $num2){
-    padding: $num1 $num2;
-}
-@mixin title($color,$num3){
-    @include fz(48px);
-    color: $color;
+.title{
+    font-size: 48px;
+    color: $color-red;
     text-align: center;
     font-weight: bold;
-    margin-bottom: $num3;
 }
-$color-white:#FBF2F2;
-$color-black:#000000;
-$color-red:#AA0601;
 img{
     display: block;
     max-width: 100%;
 }
 .nav{
     background-color: $color-red;
-    @include padding(16px, 0);
+    padding: 16px 0;
     .container{
-        @include d-flex;
         align-items: center;
         justify-content: space-between;
     }
     .menu{
-        @include d-flex;
-        @include fz(20px);
-        gap: 64px;
         color:white;
-        
+        gap: 64px;
+        font-size: 20px;
+        justify-content: space-between;
     }
     img{
         width: 80px;
     }
 }
-.banner{
-    height: 787px;
-    background-image: url(../imgs/home-header-hw3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:$color-red;
-    .container{
-        @include d-flex;
-        height: 100%;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    h1{
-        @include fz(64px);
-        font-weight: bold;
-    }
-    .text{
-        p{
-            @include fz(36px);
-            text-align: right;
-        }
-        a{
-            @include btn;
-        }
-    }
-    .btn{
-        @include d-flex;
-        justify-content: flex-end;
-    }
-}
-.about{
-    background-color: $color-white;
-    @include padding(80px,0px);
-    &-title{
-        @include title($color-red,36px);
-    }
-    &-menu{
-        @include d-flex;
-        gap: 24px;
-        li{
-            img{
-                margin: 0 auto;
-            }
-            h3{
-                @include fz(36px);
-                color: $color-red;
-                text-align: center;
-            }
-            p{
-                @include fz(24px);
-            }
-        }
-    }
-
-}
-.classic{
-    background-color: #fff;
-    @include padding(80px,0);
-    &-title{
-        @include title($color-red,48px);
-    }
-    &-menu{
-        @include d-flex;
-        justify-content: space-between;
-        li{
-            width: 416px;
-        }
-        p{
-            color: $color-red;
-            font-weight: bolder;
-            font-style: italic;
-            @include fz(48px);
-            text-align: center;
-        }
-    }
-}
-.joint{
-    @include padding(80px,0px);
+.footer{
     background-color: $color-red;
-    &-title{
-        @include title($color-white,48px);
+    color:$color-white;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    &-content{
+        align-items: center;
+        justify-content: space-between;
     }
-    &-menu{
-        @include d-flex;
+    &-left{
+        .list{
+            gap: 48px;
+            // margin-bottom: 24px;
+        }
+        .social{
+            gap: 32px;
+        }
     }
-    p{
-        background-color: #fff;
-        text-align: center;
-        @include fz(48px);
-        @include padding(8px,0px);
-        color: $color-red;
-        font-style: italic;
-        font-weight: bold;
+    &-bottom{
+        justify-content: space-between;
+        .d-flex{
+            gap: 48px;
+        }
     }
 }
+@import "_rwdhw03.scss";

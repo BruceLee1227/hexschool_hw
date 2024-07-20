@@ -1,0 +1,46 @@
+// Header
+@media (max-width:768px){
+    .nav{
+        .logo{
+            margin-right: 124px;
+        }
+    }
+}
+@media (max-width:375px){
+    .nav{
+        padding: 0;
+        .d-flex{
+            flex-direction: column;
+        }
+        .logo{
+            align-self: flex-start;
+            margin: 16px 15px;
+        }
+        .menu{
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0;
+            a{
+                width: 100%;
+            }
+            li{
+                border: 1px solid white;
+                text-align: center;
+                width: 50%;
+            }
+        }
+            
+    }
+}
+
+// footer
+@media (max-width:375px){
+    .footer{
+        &-left{
+            .list{
+                display: none;
+            }
+        }
+    }
+}
