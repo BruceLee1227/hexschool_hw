@@ -214,5 +214,6 @@ body {
   }
   .footer .copyright .d-flex {
     flex-direction: column;
+    gap: 0;
   }
 }
